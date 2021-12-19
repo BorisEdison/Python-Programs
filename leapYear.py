@@ -10,5 +10,3 @@ else:
         print("Leap year.")
     else:
         print("Not leap year.")
-
-
