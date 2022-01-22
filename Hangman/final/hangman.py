@@ -4,7 +4,7 @@ chosen_word = random.choice(hangman_words.word_list)
 word_length = len(chosen_word)
 
 # from hangman_words import word_list
-# chosen_word = random.choice(wordlist)
+# chosen_word = random.choice(word_list)
 # word_length = len(chosen_word)
 
 end_of_game = False
@@ -12,15 +12,16 @@ lives = 6
 
 from hangman_art import logo
 print(logo)
-#print(f'Pssst, the solution is {chosen_word}.')
+#print(f'The solution is {chosen_word}.')
 
-#Create blanks
 display = []
 for _ in range(word_length):
     display += "_"
 
+print(f"\n{' '.join(display)}")
+
 while not end_of_game:
-    guess = input("Guess a letter: ").lower()
+    guess = input("\nGuess a letter: ").lower()
     if guess in display:
       print(f"You've already guessed {guess}")
       continue
@@ -31,7 +32,7 @@ while not end_of_game:
             display[position] = letter
 
     if guess not in chosen_word:
-        print(f"You guessed {guess}, that's not in the word. You lose a life.")
+        print(f"\nYou guessed {guess}, that's not in the word. You lose a life.")
         lives -= 1
         if lives == 0:
             end_of_game = True
@@ -44,4 +45,4 @@ while not end_of_game:
         print("You win.")
 
     from hangman_art import stages
-    print(stages[6-lives])
+    print(stages[lives])
