@@ -1,0 +1,78 @@
+Objects are responsive to events.
+Objects have got two kinds of behaviour static and dynamic
+Objects orientation is nothing but cooperative collection of Objects. (Collaborate)
+
+Python is function oriented, procedure oriented, object oriented...
+s
+File:(object) permission(readmode, write mode), extenion, size, 
+
+
+Mode: read write append
+
+when file is opened in write mode if it already exists it overwrites the existing file
+append: only if the file exists
+
+Syntax:
+file object = open(file_name [, access_model][, buffering])
+
+
+Parameters:-
+file_name:
+access_mode:
+buffering:
+
+r: 
+rb: 
+r+: both reading and writing
+rb+
+w
+wb
+w+
+
+
+close() method:
+Syntax:
+fileObject.close()
+
+write() Method:
+Syntax:                     
+fileObject.write(string)
+
+read() Method:
+Syntax:                    
+fileObject.read([count])
+
+File Position:
+tell() method
+seek(offset[,from])
+
+
+RENAME
+rename() method
+Syntax:
+os.rename(current_file_name, new_file_name)
+
+
+DELETE:
+delete()
+os.remove(file_name)
+
+
+DIRECTORIES IN PYTHON:
+mkdir()
+os.mkdir("newdir")
+
+
+chdir()
+os.chdir("newdir")
+
+rmdir()method:
+os.rmdir('dirname')       //only deletes if the directory is empty
+
+
+READING INFORMATION FROM FILES:
+for line in inputFile:
+    print(line)
+
+
+CLOSING 
