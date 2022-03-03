@@ -1,0 +1,10 @@
+import the tkinter module 
+
+create the gui applicatoin main window
+ 
+add widgets 
+ 
+enter the main event loop
+
+A widget is an element of a graphical user interface that displays information or provides 
+a specific way for a user to interact with the operating system or an appication
